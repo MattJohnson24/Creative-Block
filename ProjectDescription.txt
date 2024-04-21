@@ -1,0 +1,47 @@
+Team Contract and Project Description
+
+-------------------------------------
+
+Team Name: Back That 'ASCII' Up
+
+GitHub Repo: https://github.com/CSE370HCI/ascii 
+
+ZenHub Board: https://app.zenhub.com/workspaces/creative-outlet-620ad4233441b20013378cbb/board?repos=457941106 
+
+Figma Board: https://www.figma.com/file/kccbES7R5PZK8qUGMRW69G/Creative-Outlet?node-id=0%3A1 
+
+-------------------------------------
+
+Resolution Approach: 
+
+The team's alternate dispute resolution approach is to roll a die. The die is rolled until the first idea-assigned number appears.  That number is the winner. For example, if there are three conflicting ideas each idea is assigned to a number on the die (idea one is face one, idea two is face two, etc.). The first die roll is four, no idea was assigned to four so the die is rolled again. The second roll is two. Therefore, the team declares idea two as the winner and uses it for the project.
+
+-------------------------------------
+
+Project Description: Creative Outlet
+
+Do you want to be more creative, but are lacking inspiration? Creative Outlet is a social media platform that promotes creativity and allows you to share content relating to a weekly topic or theme. We’ve all heard of websites and applications used for ‘Writing Prompts’. Creative Outlet works in a similar way, but you are not limited to one type of content. Instead, you can use any medium you want! Create paintings, poems, lyrics, pottery, digital art, photography - the possibilities are endless!
+
+Here’s how it works: 
+
+1) Each week, check out the content theme or topic on the Creative Outlet website. Some examples of this could be “The Ocean”, “Urban Life”, “Vintage/Retro”, “Asymmetry”, etc. 
+
+2) Use the topic as inspiration when creating  your content. Like mentioned above, this could be anything!
+
+3) Share your artwork to the weekly newsfeed with a digital gallery label
+
+4) Check out content from fellow artists and vote for work that you think is awesome or interesting. If you want, you can filter posts to find exactly what you’re looking for.
+
+5) You will also have the option to flag content that you find inappropriate or offensive and we will take a look.
+
+6) Each week, the top rated content will be showcased on the landing page for all to see!
+
+But wait! There’s more! Creative Outlet can also be used as a digital portfolio. All your previously shared content can be found on your personal profile page. This not only lets you store all your art in one place, it also allows you to see how you’ve improved over time. This could be used to share with potential employers or university admissions. You can also connect with other artists that use our platform. Do we see a collaboration developing?!
+
+-------------------------------------
+
+Typical User: 
+
+A typical user of Creative Outlet would be an individual interested in creating a piece of art and sharing it with Creative Outlet's artistic community. This can vary from a hobbyist of any age to a student working towards completing their portfolio. Note: If the artist is under the age of 14, a parent or guardian must monitor the account.
+
+An artist will be greeted by a welcome page allowing them to login or signup. Once they select an option and enter the required information, they can view Creative Outlet's homepage which features a weekly creative topic/theme and the top voted artwork of the previous week's submissions. The artist can also access their profile where they can post their artwork as a submission for the current week's topic. They also will have a portfolio of all their previous submissions. Additionally, artists can vote on artworks once all the submissions for the current week have been collected. The winner will be featured on Creative Outlet's homepage.

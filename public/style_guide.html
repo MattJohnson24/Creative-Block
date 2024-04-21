@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="public_styles.css" />
+    <title>Style Guide</title>
+  </head>
+  <body>
+    <h1
+      style="
+        font-family: CabinSketch-Bold;
+        font-size: 70px;
+        margin-bottom: 0;
+        text-align: center;
+      "
+    >
+      CREATIVE BLOCK
+    </h1>
+    <h2
+      style="
+        font-family: Typewriterhand;
+        font-size: 40px;
+        margin-top: 0;
+        text-align: center;
+      "
+    >
+      Style Guide
+    </h2>
+
+    <button class="tablink" onclick="openPage('Branding', this, 'white')" id="defaultOpen">Branding</button>
+    <button class="tablink" onclick="openPage('Colors', this, 'white')">Colors</button>
+    <button class="tablink" onclick="openPage('Fonts', this, 'white')">Fonts</button>
+    <button class="tablink" onclick="openPage('PageLayout', this, 'white')">Page Layouts</button>
+
+    <!-- This includes information in the branding tab -->
+    <div id="Branding" class="tabcontent">
+        <h3>Platform Branding</h3>
+        <hr>
+        <h2 id="font4">Platform Logo</h2>
+        <div style="text-align: center; ">
+            <div class="logoBox">
+                <img class="logoFull" src="images/CreativeBlock.png" alt="logo: Creative Block, your daily dose of inspiration."/>
+                <p>
+                    <b>Uses:</b> This is the full brand logo that may be used 
+                    throughout the platform. It will be featured at the top of 
+                    both the login and registration forms during the onboarding
+                    process. We attempted to use contrast with our choice of font
+                    styles by pairing a script and a decorative font. The logo 
+                    includes a set of three blocks that represent the multiple
+                    forms of creative expression demonstrated by our users. 
+                </p>
+            </div>
+            <br>
+            <hr>
+            <h2 id="font4">Icons</h2>
+            <div id="logo-container">
+                <div class="iconBox">
+                    <img class="logoBlocks" src="images/BlockLogo.png" alt="Creative Blocks">
+                    <p>
+                        <b>Uses:</b> This is the partial logo to be used without the 
+                        full 'CREATIVE BLOCK' text as seen above. I can be used throughout
+                        the Creative Block platform, specifically, in the footer and 
+                        'Abous Us' page. 
+                    </p>
+                </div>
+                <div class="iconBox">
+                    <img class="logoFlav" src="images/icons/logoIconFilled.png" alt="Creative Block Mini Icon">
+                    <p>
+                        <b>Uses:</b> This icon will be used for our favicon. We simplified 
+                        the full website logo above to only include the blocks 
+                        and filled in full color. This will make it easier to 
+                        identify at a smaller size.
+                    </p>
+                </div>
+            </div>
+            <p style="text-align: left;">
+                <b>Icons:</b> For all icons used throughout the platform, we will be using the 
+                <a href="https://www.flaticon.com/uicons?corner=rounded">Flaticon Website</a>.
+                To keep a consistent feel, the icon styling should be rounded and either black
+                or white. Some of these icons include Settings, Logout, Cancel, Upload, and Back Arrows.
+            </p>
+        </div>
+    </div>
+
+    <!-- This includes information in the Colors tab -->
+    <div id="Colors" class="tabcontent">
+      <h3>Color Palette</h3>
+      <hr>
+      <h2 id="font4">Primary Palette</h2>
+      <div class="color-flex">
+        <div class="colorBox">
+            <div class="colorSwatch" style="background-color: #ededed"></div>
+            <p style="font-weight: 600;">
+                HEX: #ededed
+                <br>
+                RGB: rgb(237, 237, 237)
+            </p>
+            <p>
+                <b>Uses:</b> This shade of light gray will be used for block strips on headers 
+                and the background of a gallery post.
+            </p>
+        </div>
+        <div class="colorBox">
+            <div class="colorSwatch" style="background-color: #000000; color: #ffffff"></div>
+            <p style="font-weight: 600;">
+                HEX: #000000
+                <br />
+                RGB: rgb(0, 0, 0)
+            </p>
+            <p>
+                <b>Uses:</b> Black will be used for a vast majority of text throughout the website.
+            </p>
+        </div>
+        <div class="colorBox">
+            <div class="colorSwatch" style="background-color: #ffffff"></div>
+            <p style="font-weight: 600;">
+                HEX: #ffffff
+                <br />
+                RGB: rgb(255, 255, 255)
+            </p>
+            <p>
+                <b>Uses:</b> White will be used for the background color of pages as well as form 
+                text color in the onboarding pages such as registration and login.
+            </p>
+        </div>
+      </div>
+      <hr />
+      <h2 id="font4">Secondary Palette</h2>
+      <div class="color-flex">
+        <div class="colorBox">
+            <div class="colorSwatch" style="background-color: #1a9bae"></div>
+            <p style="font-weight: 600;">
+                HEX: #1a9bae
+                <br />
+                RGB: rgb(26, 155, 174)
+            </p>
+            <p>
+                <b>Uses:</b> This shade of blue will be used in the navigation bar. 
+                50% transparency may also be used for shading and gradients.
+            </p>
+        </div>
+        <div class="colorBox">
+            <div class="colorSwatch" style="background-color: #ea5a4f"></div>
+            <p style="font-weight: 600;">
+                HEX: #ea5a4f
+                <br>
+                RGB: rgb(234, 90, 79)
+            </p>
+            <p>
+                <b>Uses:</b> This shade of red will be used sparingly for 
+                buttons as well as for error messaging. 50% transparency may 
+                also be used for shading and gradients.
+            </p>
+        </div>
+        <div class="colorBox">
+            <div class="colorSwatch" style="background-color: #f4be61"></div>            
+            <p style="font-weight: 600;">
+                HEX: #f4be61
+                <br>
+                RGB: rgb(244, 190, 97)
+            </p>
+            <p>
+                <b>Uses:</b> This shade of yellow will be used sparingly for 
+                buttons as well as for highlighting important messages. 50% 
+                transparency may also be used for shading and gradients.
+            </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- This includes information in the Fonts tab -->
+    <div id="Fonts" class="tabcontent">
+        <div id="fontBox">
+            <h3>Typography</h3>
+            <hr />
+            <h2 id="font1">Cabin Sketch - Bold</h2>
+            <h2 id="font2">Cabin Sketch - Regular</h2>
+            <p>
+                <b>font-family:</b> 'Cabin Sketch', cursive; <br>
+                <b>font-weight:</b> Bold <br>
+                <b>font-weight:</b> Regular <br>
+                <b>font-size:</b> Over 40px
+            </p>
+            <p>
+                <b>Uses:</b> These fonts are used sparingly for main headings and titles, as 
+                well as the navigation bar. It is a Decorative font style that has the appearance
+                of hand-sketched block lettering. We chose the font to symbolize the creative
+                process of artists. It should be used with ALL CAPS in either Regular and Bold, 
+                but it should not be italized. 
+            </p>
+
+            <br>
+            <hr />
+            
+            <h2 id="font3">Typewriterhand</h2>
+            <p>
+                <b>font-family:</b> Typewriterhand <br>
+                <b>font-style:</b> regular <br>
+                <b>font-weight:</b> regular <br>
+                <b>font-size:</b> 20px to 40px
+            </p>
+            <p>
+                <b>Uses:</b> This font will be used for subheadings and input boxes during
+                the onboarding proccess. It is a Script font style that has the appearance
+                of handwriting. The font only has one thickness and cannot be italized.
+            </p>
+
+            <br>
+            <hr />
+
+            <h2 id="font4">Open Sans</h2>
+            <p>
+                <b>font-family:</b> 'Open Sans', sans-serif <br>
+                <b>font-style:</b> italics, regular <br>
+                <b>font-weight:</b> 300, 400, 500, 600, 700, 800 <br>
+                <b>font-size:</b> Up to 20px
+            </p>
+            <p>
+                <b>Uses:</b> This font will be used for a majority of basic text throughout the website.
+                It is a Sans Serif font style that is easy to read. There are many different
+                ways to style this font which gives the developer a bit of flexibility when 
+                incorporating for their components.
+            </p>
+        </div>
+    </div>
+
+    <!-- This includes information in the Page Layouts tab -->
+    <div id="PageLayout" class="tabcontent">
+        <h3>Component Styling</h3>
+        <hr>
+        <h2 id="font4">Navigation Bar</h2>
+        <p>
+            <b>Features:</b> The navigation bar will be a strip at the top of the page. 
+            When hovered the different tabs will change from regular text to bolded text 
+            and change to a more pigmented color blue. When clicked, the page will redirect 
+            you and the active tab will not be highlighted to a darker shade.
+        </p>
+        <img src="images/Navigation.png" alt="Navigation Bar" width="100%">
+        <p>
+            <b>Responsiveness:</b> The nav bar uses percents to fill the entire width 
+            of the page. It will shrink and enlarge based on the size of the screen. If 
+            the website is converted to a mobile application, we will change from text 
+            to icons and move the strip to the bottom of the page. It will be thinner
+            than the web version.  
+            
+        </p>
+
+        <br><br>
+        <hr>
+
+        <h2 id="font4">Footer</h2>
+        <p>
+            <b>Features:</b> The footer will be a strip at the bottom of the page. 
+            It will include the sections: Account, About Us, and Help Center. These
+            will display various links such as the Style Guide that you're currently 
+            viewing. Additionally, the company logo will be featured on the left hand
+            side of the footer.
+        </p>
+        <img src="images/Footer.png" alt="Footer" width="100%">
+        <p>
+            <b>Responsiveness:</b> Similarly to navigation, the footer will be able to 
+            shrink based on the width of the page. If the size shrinks significantly, 
+            the logo will be stacked on top of the three categories of links.
+        </p>
+
+        <br><br>
+        <hr>
+
+        <h2 id="font4">Buttons</h2>
+        <p>
+            <b>Features:</b> The buttons will stay consistent whenever possible and 
+            follow the styling seen below. The background is white, the text is in
+            All Caps using the font-family: CabinSketch-Regular in size 25px. The 
+            dimension height will be 50px and the width will default to fit content.
+        </p>
+        <img src="images/ButtonTheme.png" alt="Button Styling" width="20%">
+        <p>
+            <b>Responsiveness:</b> The width of the button will be determined by the 
+            'fit-content' attribute. Therefore, if the text becomes smaller, the button 
+            will also resize.
+        </p>
+
+        <br><br>
+        <hr>
+
+        <h2 id="font4">Error Handling</h2>
+        <p>
+            <b>Features:</b> We consistently use alerts to handle any error messaging. 
+            These are used during form submission in login and registration pages 
+            as well as during content uploads. An example of an alert message is shown
+            in the image below. 
+        </p>
+        <img src="images/alertMessage.png" alt="Error Message" width="50%">
+        <p>
+            <b>Responsiveness:</b> This will stay consistent accross all platforms.
+        </p>
+
+        <br><br>
+        <hr>
+        <h2 id="font4">Modals</h2>
+        <p>
+            <b>Features:</b> The modal will be used for two separate layouts within
+            our platform: Followers and Content Information. If you click on the 
+            followers icon in the profile page or any shared content in the gallery,
+            the modal will pop up on the screen and display relevant content. The 
+            background will phade darker so your focus is drawn to the window. To exit, 
+            there will be an 'x' icon in the top right corner. For consistentcy, the 
+            edges will be rounded using 'border-radius: 25;'
+        </p>
+        <img src="images/Modal.png" alt="Modals" width="70%">
+        <p>
+            <b>Responsiveness:</b> The modal will take up roughly 75% of the overall page.
+            It should center the modal window on any size page it is opened in.
+        </p>
+
+        <br><br>
+        <hr>
+        
+        <h2 id="font4">Onboarding</h2>
+        <p>
+            <b>Features:</b> Onboarding should remain consistent from resistration to login. 
+            The input fields will be contained inside of a gradient form. There should be 
+            placeholders within each input textbox in Typewriterhand font. The gradient used
+            for the background color is: <br><br>
+           <i>linear-gradient(132.37deg, rgba(26, 155, 174, 0.5) 0%, #E0C597 51.36%, #DB938E 98.6%);</i>
+        </p>
+        <img src="images/Onboarding.png" alt="Create a New Account" width="40%">
+        <p>
+            <b>Responsiveness:</b> The form in which our input fields are contained will
+            be given a dimension based on percentage rather than by pixels. This will 
+            Shink down the content for smaller screen sizes.
+        </p>
+
+        <br><br>
+        <hr>
+        
+        <h2 id="font4">Content Sharing</h2>
+        <p>
+            <b>Features:</b> All posts that are uploaded on the gallery page will be styled using
+            a flex grid with three columns. The content container will be 30% of the page in width
+            and fit-content of the height. Each post will display a gallery label with the artist 
+            name, their birth year, content type and the materials used to create the content.
+        </p>
+        <img src="images/ContentContainer.png" alt="Gallery Display" width="40%">
+        <p>
+            <b>Responsiveness:</b> The flex container will change dynamically depending on the sizes
+            of the screen. Once it drops below certain screen size, the flexbox will change to a single
+            column and the posts will be stacked.
+        </p>
+
+    </div>
+
+
+    <script>
+      function openPage(pageName, elmnt, color) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].style.backgroundColor = "";
+          tablinks[i].style.borderColor = "gray";
+        }
+        document.getElementById(pageName).style.display = "block";
+        elmnt.style.backgroundColor = color;
+        elmnt.style.borderBottomColor = "white";
+      }
+      // Get the element with id="defaultOpen" and click on it
+      document.getElementById("defaultOpen").click();
+    </script>
+  </body>
+</html>

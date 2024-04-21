@@ -1,0 +1,1228 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: fit-content;
+}
+
+
+/* Fonts */
+@font-face {
+  font-family: Typewriterhand;
+  src: url(../src/fonts/Typewriterhand.ttf);
+}
+@font-face {
+  font-family: CabinSketch-Bold;
+  src: url(../src/fonts/CabinSketch-Bold.ttf);
+}
+@font-face {
+  font-family: CabinSketch-Regular;
+  src: url(../src/fonts/CabinSketch-Regular.ttf);
+}
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+/* 
+font-family: 'Cabin Sketch', cursive;
+font-family: 'Open Sans', sans-serif; 
+*/
+
+#font1 {
+  font-family: 'Cabin Sketch', cursive;
+  font-weight: bold;
+  font-size: 40px;
+  margin-bottom: 0;
+}
+#font2 {
+  font-family: 'Cabin Sketch', cursive;
+  font-size: 40px;
+  margin-top: 0;
+}
+#font3 {
+  font-family: Typewriterhand;
+  font-size: 40px;
+}
+#font4 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 100;
+  font-size: 40px;
+}
+
+
+/* Style Guide */
+.tablink {
+  background-color: #EDEDED;
+  color: black;
+  float: left;
+  border: solid;
+  border-bottom: solid gray 1px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 20px;
+  width: 25%;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+}
+.tablink:hover {
+  background-color: #cdcdcd;
+}
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: black;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+  width: 50%;
+  text-align: center;
+  margin: auto;
+}
+.tabcontent p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  text-align: left;
+}
+.tabcontent h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  text-align: center;
+}
+#Branding {background-image: white;}
+#Colors {background-color: white;}
+#Fonts {background-color: white;}
+#PageLayout {background-color: white;}
+#logo-container {
+  display: flex; 
+  text-align: center; 
+  justify-content: space-evenly;
+}
+.iconBox {
+  width: 300px;
+  padding: 40px;
+}
+.logoBox {
+  padding-top: 40px;
+}
+.logoFull {
+  width: 100%;
+  margin-bottom: 40px;
+}
+.logoBlocks {
+  width: 200px;
+}
+.logoFlav {
+  width: 200px;
+}
+.color-flex {
+  display: flex;
+  text-align: center;  
+  width: 100%;
+  justify-content: space-around;
+  margin: 40px 0px 40px 0px;
+}
+.colorBox {
+  text-align: center;
+}
+.colorBox p {
+  text-align: left;
+  width: 250px;
+}
+.colorSwatch {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: solid black 2px;
+  margin: auto;
+  text-align: center;
+}
+#fontBox p, h2 {
+  text-align: left;
+}
+
+
+
+/* Navigation Bar */
+.navbar {
+  width: 100%;
+  overflow: auto;
+  background-color: #1a9bae88;
+}
+.navbar a {
+  float: left;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  width: fit-content;
+  padding: 5px 10px 5px 10px;
+  font-size: 20px;
+  font-family: CabinSketch-Regular;
+}
+.navbar img {
+  width: 23px;
+  text-align: center;
+}
+.navbar a:hover:not(.active) {
+  background-color: #1a9bae55;
+  font-family: CabinSketch-Bold;
+}
+a.active {
+  background-color: #1a9baeAA;
+  font-family: CabinSketch-Bold;
+}
+.navPic {
+  display: none;
+}
+
+
+
+/* Footer */
+.footer-grid {
+  display: flex;
+  justify-content: center;
+  background-color: #cdcdcd;
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+  height: 150px;
+}
+.footer-left {
+  width: 40%;
+  text-align: center;
+  margin: auto;
+}
+#large-logo img {
+  width: 300px;
+}
+
+#small-logo {
+  display: none;
+}
+.footer-right {
+  width: 55%;
+  display: flex;
+  justify-content: space-evenly;  
+  text-align: left;
+  padding: 10px;
+}
+.footer-right a,span {
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  color: black;
+  line-height: 24px;
+}
+.footer-right a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+/* User Settings CSS */
+.settingsForm {
+  text-align: center;
+  margin: auto;
+  background-color: #ffffff;
+  height: 100%;
+  max-width: 600px;
+  width: 80%;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  color: #000000;
+}
+.settingsForm hr {
+  width: 100%;
+  height: 10px;
+}
+.settingsForm h1 {
+  /* padding-top: 20px; */
+  text-align: center;
+  font-family: CabinSketch-Bold;
+  font-size: 50px;
+  color: #000000;
+}
+.settingsRadio {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+}
+.settingsLabels {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  text-align: center;
+  padding: 10px;
+}
+#settingsInput {
+  text-align: left;
+}
+#delete-button {
+  font-family: 'CabinSketch-Regular';
+  font-size: 25px;
+  text-decoration: none;
+  color: black;
+  width: max-content;
+  padding: 5px 20px 5px 20px;
+  margin: 0px;
+}
+#delete-button:hover {
+  background-color: #ea5a4fAA;
+}
+/* delete account modal confirmation */
+#confirmation-modal{
+  overflow: hidden;
+}
+#confirmation-modal-content{
+  max-width: 400px;
+  width: 80%;
+  overflow: hidden;
+  margin: 15% auto;
+}
+.confirmation-values{
+  display: flex;
+  justify-content: center;
+  padding-top: 15px;
+}
+
+
+
+/* Gallery CSS */
+.galleryPost {
+  background-color: #EDEDED;
+  border-radius: 25px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 200;
+  margin-bottom: 40px;
+  height: fit-content;
+  overflow-wrap: normal;
+  text-align: center;
+  padding: 10px;
+}
+.galleryImg {
+  margin: 20px;
+}
+.galleryLabel {
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
+  background-color: white;
+  width: 70%;
+  margin: 20px auto 20px auto;
+  text-align: left;
+  padding: 5px;
+  box-shadow: 2px 2px 2px gray;
+  color: black;
+}
+.galleryLabel p {
+  margin: 0;
+}
+.labelName {
+  font-size: 18px;
+}
+.labelTitle {
+  font-style: italic;
+  font-size: 16px;
+  padding-bottom: 12px;
+}
+.labelInfo {
+  font-size: 14px;
+}
+.flex-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items:flex-start;
+  margin: 30px 30px 0 30px;
+}
+#plusButton {
+  display: block;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  z-index: 1;
+  width: 70px;
+  height: 70px;
+  border: none;
+  box-shadow: 3px 2px 5px gray;
+  background-image: linear-gradient(132.37deg, #1a9baeCC 20%,  #ea5a4fCC 50%, #f4be61CC 80%);
+  color: white;
+  cursor: pointer;
+  border-radius: 50px;
+  font-size: 50px;
+}
+/* Theme Strip */
+.weeklyInspo {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  background-color: #EDEDED;
+  min-height: fit-content;
+}
+.themeName {
+  font-family: CabinSketch-Bold; 
+  font-size: 75px; 
+  padding: 0; 
+  margin: 0;
+  color:black;
+}
+.themeText {
+  font-family: CabinSketch-Regular; 
+  font-size: 40px; 
+  padding: 0; 
+  margin: 35px 0px 10px 0px;
+  color:black;
+}
+/* Filter Bar */
+.filter-container {
+  background-color: #EDEDED;
+  width: 100%;
+}
+.filter-flexbox {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.filterDropdown {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  background-color: #EDEDED;
+  border: none;
+  width: fit-content;
+  margin-left: 20px;
+  text-align: right;
+}
+#clear-filter-button  {
+  height: 30px;
+  margin: 10px 20px;
+  cursor: pointer;
+  display: block;
+}
+@media only screen and (max-width: 640px) {
+  .navbar a {
+    font-size: 0;
+    color: transparent; 
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-bottom: 0px;
+  }
+  .navPic {
+    display: block;
+  }
+  .navbar img {
+    padding-bottom: 0px;
+    margin-bottom: 8px;
+  }
+  .flex-item {
+    width: 95%;
+    min-width: 300px;
+  }
+  .filterDropdown {
+    font-family: "Open Sans", sans-serif;
+    font-size: 12px;
+    background-color: #EDEDED;
+    border: none;
+    width: fit-content;
+    margin-left: 5px;
+    text-align: right;
+  }
+  .themeName{
+    font-size: 50px;
+  }
+  .themeText{
+    font-size: 25px;
+  }
+  .modal-left {
+    width: 95%;
+    padding: 0px;
+  }
+  .modal-right {
+    width: 95%;
+    padding: 0px
+  }
+  #new-comment {
+    width: 93%;
+  }
+  .profile-right {
+    width: 222px;
+    margin: 20px;
+  }
+  .profileInfo {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    text-align: center;
+  }
+  .profile-right h2 {
+    text-align: center;
+  }
+  .mission-header {
+    font-size: 50px;
+  }
+  .mission-message {
+    font-size: 20px;
+  }
+  .value-list {
+    width: 90%;
+    text-align: center;
+    margin: auto;
+  }
+  .value-header {
+    font-family: CabinSketch-Regular; 
+    font-size: 50px; 
+    color:black;
+  }
+  .value-flex {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    text-align: left;
+    justify-content: center;
+  }
+  .value-text {
+    width: 80%;
+    font-size: 20px;
+    font-family: Typewriterhand;
+    margin: auto 0px;
+    flex-wrap: wrap;
+    text-align: left;
+  }
+  .number-icon {
+    width: 50px;
+    margin: auto;
+  }
+  .team-header {
+    font-size: 50px; 
+    text-align: center;
+  }
+  #large-logo {
+    display: none;
+  }
+  #small-logo {
+    display: contents;
+    margin: auto;
+    vertical-align: middle;
+  }
+  #small-logo img {
+    width: 100px;
+  }
+  .footer-right a,span {
+    font-size: 12px;
+  }
+}
+@media only screen and (min-width: 641px) {
+  .flex-item {
+    width: 45%;
+  }
+  .modal-left {
+    width: 30%;
+    padding: 1%;
+  }
+  .modal-right {
+    width: 60%;
+    padding: 0px
+  }
+  #new-comment {
+    width: calc(100% - 175px);
+  }
+  .profile-right {
+    text-align: left;
+    max-width: 50%;
+    margin: 20px;
+  }
+  .profileInfo {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    text-align: left;
+  }
+  .mission-header {
+    font-size: 85px;
+  }
+  .mission-message {
+    font-size: 30px;
+  }
+  .value-list {
+    width: 65%;
+    text-align: center;
+    margin: auto;
+  }
+  .value-header {
+    font-family: CabinSketch-Regular; 
+    font-size: 75px; 
+    color:black;
+  }
+  .value-flex {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    text-align: left;
+    justify-content: center;
+  }
+  .value-text {
+    width: 80%;
+    font-size: 40px;
+    font-family: Typewriterhand;
+    margin: auto 0px;
+    flex-wrap: wrap;
+  }
+  .number-icon {
+    width: 100px;
+    margin: auto 10px;
+  }
+  .team-header {
+    font-size: 85px; 
+  }
+
+}
+@media only screen and (min-width: 1008px) {
+  .flex-item {
+    width: 30%;
+  }
+}
+@media only screen and (min-width: 1750px) {
+  .flex-item {
+    width: 23%;
+  }
+}
+
+/* Comment Modal Styling */
+.modal {
+  display: block;
+  position: fixed; /* Stay in place */
+  z-index: 2; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: scroll; /*Enable scroll if needed*/
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.6); /* Black w/ opacity */
+}
+.modal-content {
+  background-color: #ffffff;
+  margin: 3% auto;
+  padding: 20px;
+  border-radius: 25px;
+  width: 80%;
+}
+.close {
+  background-color: #cdcdcd;
+  float: right;
+  line-height: 0px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  border: none;
+  position: absolute;
+  right: 10%;
+}
+.close img {
+  width: 18px;
+}
+.close:hover, .close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: #c4c4c4;
+}
+.modal-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.modal-header {
+  text-align: left;
+  font-weight: 300;
+}
+.open-modal {
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+.comment-container {
+  width: 100%;
+  height: 425px;
+  overflow: scroll;
+  margin-bottom: 10px;
+  box-shadow: inset 0px 0px 8px gray;
+  border-radius: 10px;
+  text-align: left;
+}
+.comment {
+  margin-left: 20px;
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+}
+#new-comment {
+  /* width: calc(100% - 175px); */
+  height: 30px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  border-radius: 25px;
+  border: solid 1px;
+  padding: 2px 2px 2px 15px;
+  margin: 15px 11px 15px 0px;
+}
+#like-flex {
+  display: flex;
+  justify-content: center;
+}
+#like-button {
+  display: block;
+  width: 60px;
+  height: 60px;
+  border: none;
+  box-shadow: 3px 2px 5px gray;
+  background-image: linear-gradient(132.37deg, #1a9baeCC 20%,  #ea5a4fCC 50%, #f4be61CC 80%);
+  color: white;
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 15px;
+  margin-right: 15px;
+}
+#like-button:active {
+  transform: translate(2px, 2px);
+  box-shadow: 0px 1px 3px gray;
+  transition: 0s;
+}
+#like-number {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 60px;
+  margin-left: 15px;
+}
+#delete-post {
+  margin-top: 20px;
+  text-align: right;
+}
+#delete-post img {
+  padding-right: 5px;
+  vertical-align: text-top;
+}
+
+
+/* Landing Page CSS */
+#landing {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+#logoLanding {
+  width: 100%;
+  text-align: center;
+  margin-top: 15%;
+} 
+#logoLanding img {
+  width: 60%;
+  min-width: 300px;
+
+} 
+#button-container {
+  text-align: right;
+}
+/* universal button for smaller text */
+.smallButton {
+  width: 125px;
+  border-style: solid;
+  border-radius: 25px;
+  border-color: black;
+  border-width: 1px;
+  background-color: white;
+  color: black;
+  font-family: 'CabinSketch-Regular';
+  font-size: 25px;
+  text-align: center;
+  text-decoration: none;
+  display:inline-block;
+  padding: 10px 0px, 10px, 0px;
+  margin: 10px;
+  box-shadow: 1px 2px 3px gray;
+}
+.smallButton:hover {
+  background-color: #ededed;
+  transition: 0.4s;
+}
+.smallButton:active {
+  transform: translate(2px, 2px);
+  box-shadow: 0px 1px 3px gray;
+  transition: none;
+}
+
+
+/* Onboarding CSS */
+.obPage {
+  text-align: center;
+  position: relative;
+  min-height: 100vh;
+}
+.obLogo {
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.obLogo img {
+  width: 40%;
+  min-width: 300px;
+
+}
+.obBox {
+  margin: auto;
+  height: fit-content;
+  padding: 30px;
+  text-align: center;
+  width: 75%;
+  max-width: 500px;
+  background: linear-gradient(132.37deg, rgba(26, 155, 174, 0.75) 10%, rgb(244, 190, 97, 0.75) 50%, rgb(234, 90, 79, 0.75) 90%);
+  border-radius: 25px;
+}
+.formField {
+  font-family: 'Typewriterhand';
+  font-size: 15px;
+  font-weight: 300;
+  width: 95%;
+  border: none;
+  height: 35px;
+  padding-left: 15px;
+  margin-bottom: 10px;
+  border-radius: 25px;
+  box-sizing: border-box;
+  background-color: white;
+}
+.textLinks {
+  color: white;
+  text-decoration: underline;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: 'Open Sans', sans-serif;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.50);
+  padding: 0px;
+  margin: 0px;
+}
+
+.obText {
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: 'Open Sans', sans-serif;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.50);
+  padding: 0px;
+  margin: 0px;
+}
+.breakLine {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: none;
+  background-color: white;
+  height: 4px;
+  width: 100%;
+  border-radius: 5px;
+}
+.largeButton {
+  width: 95%;
+  height: 35px;
+  border-style: solid;
+  border-radius: 25px;
+  border-color: black;
+  border-width: 1px;
+  background-color: white;
+  color: black;
+  font-family: 'CabinSketch-Regular';
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+  display:inline-block;
+  margin-bottom: 10px;
+  box-shadow: 1px 2px 3px gray;
+}
+.largeButton:hover {
+  background-color: #ededed;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.largeButton:active {
+  transform: translate(2px, 2px);
+  box-shadow: 0px 1px 3px gray;
+  transition: 0s;
+}
+
+
+/* Upload Content CSS */
+.inputField {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  width: 100%;
+  border-style: solid;
+  border-color: #00000033;
+  border-width: 1px;
+  height: 50px;
+  padding-left: 15px;
+  margin-bottom: 10px;
+  border-radius: 25px;
+  box-sizing: border-box;
+  background-color: white;  
+}
+#uploadDropdown {
+  appearance: none;
+  background-image: url(../src/assets/dropdown.png);
+  background-repeat: no-repeat;
+  background-position: calc(100% - 12px) center;
+  background-size: 30px;
+}
+#uploadDropdown:invalid {
+  color: gray;
+}
+#instructions {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+}
+.uploadForm {
+  text-align: center;
+  max-width: 600px;
+  margin: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.uploadButton{
+  height: 130px;
+  width: 130px;
+  cursor: pointer;
+}
+.form-check{
+  text-align: left;
+  width: fit-content;
+}
+.form-check-label{
+  color: #41403e;
+  font-size: small;
+}
+.backButton-div{
+  padding: 30px 0px 0px 30px;
+  text-align: left;
+}
+.backButton{
+  height: 50px;
+  width: 50px;
+}
+
+
+
+/* Profile Styling */
+.profile-content {
+  text-align: center;
+  margin: auto;
+  max-width: 750px;
+}
+.profile-flex {
+  display: flex;
+  margin: 20px auto;
+  width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.profile-left {
+  text-align: center;
+  width: fit-content;
+  margin: 20px;
+}
+.profile-picture {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.profile-image {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border: solid 1px;
+  border-radius: 50%;
+}
+.profileInfo h2, .profileInfo h3, .profileInfo p{
+  margin: 10px 0px 10px 0px;
+}
+.edit a {
+  font-family: 'CabinSketch-Regular';
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+  width: max-content;
+  padding: 5px 20px 5px 20px;
+  margin: 0px;
+}
+.edit img{
+  width: 25px;
+  padding-right: 5px;
+  vertical-align: text-bottom;
+}
+.changeprofilepicicon {
+  position: relative;
+  height: 40px;
+  z-index: 1;
+  right: 30px;
+  cursor: pointer;
+}
+/* followers styling */
+.follow-flex{
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap;
+}
+.follow-values {
+  justify-content: space-around;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  width: 50%;
+}
+.followNumberLink {
+  text-decoration: none;
+  font-size: 16px;
+  color: black;
+}
+.follow-block{
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.follow-button {
+  width: 200px;
+  min-width: fit-content;
+  padding: 0px 10px 0px 10px;
+}
+#blockButton {
+  background: none;
+	border: none;
+	padding: 0;
+	cursor: pointer;
+  width: 35px;
+}
+.block-button-div{
+  margin: auto;
+  text-align: center;
+}
+#block-user-text {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+}
+.breakLineProfilePage {
+  margin: 20px auto;
+  border: none;
+  background: linear-gradient(132.37deg, rgba(26, 155, 174, 0.75) 10%, rgb(244, 190, 97, 0.75) 50%, rgb(234, 90, 79, 0.75) 90%);
+  height: 15px;
+  width: 98%;
+  border-radius: 15px;
+}
+
+
+
+
+
+#all-follows{
+  display: flex;
+}
+.follows{
+  flex: 50%;
+}
+
+
+.followTitles{
+  text-align: center;
+  font-family: 'Cabin Sketch', cursive;
+}
+
+
+
+
+
+
+
+/* About Us Page Styling CSS */
+.mission-flex {
+  display: flex;
+  justify-content: center;
+  background-color: #EDEDED;
+  width: 100%;
+  flex-wrap: wrap;
+  text-align: left;
+}
+.mission-header {
+  width: 20%;
+  font-family: CabinSketch-Regular; 
+  color:black;
+  min-width: min-content;
+  margin: 20px;
+}
+.mission-message {
+  width: 50%;
+  font-family: Typewriterhand; 
+  color:black;
+  margin: 20px;
+}
+.values-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  justify-content: center;
+}
+.value-logo {
+  margin: auto 0px;
+  width: 25%;
+  padding: 20px;
+  min-width: 200px;
+  text-align: center;
+}
+.team-container {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+}
+.team-header {
+  width: 100%;
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: CabinSketch-Regular; 
+}
+.team-flex {
+  display: flex;
+  flex-wrap: wrap;
+  vertical-align: top;
+  text-align: center;
+  margin: 20px;
+  width: 250px;
+}
+.AboutUsImg {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border: solid 1px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.AboutUsTxt {
+  display: block;
+  margin-left: 0px;
+  font-size: 40px;
+  font-family: CabinSketch-Regular;
+  cursor: pointer;
+}
+.aboutuslinks {
+  color: inherit;
+  text-decoration: none;
+}
+/* Developer Profiles */
+.dev_profiles {
+  text-align: center;
+  margin: auto;
+  width: 90%;
+  max-width: 600px;
+}
+.dev_profiles h1 {
+  padding-top: 20px;
+  font-size: 50px;
+  font-family: CabinSketch-Bold;
+}
+.dev_profiles img {
+  width: 50%;
+  min-width: 200px;
+  padding: 20px;
+  border: solid 8px;
+  border-color: #cdcdcd;
+  margin-bottom: 30px;
+}
+.dev_profiles p {
+  /* width: 800px; */
+  text-align: justify;
+  margin: auto;
+  color: black;
+  font-family: Typewriterhand;
+  font-weight: 300;
+  font-size: 16px;
+  padding-bottom: 50px;
+}
+
+
+.errorIcon {
+  width: 18px;
+}
+
+.errorText {
+  padding-left: 4px;
+  color: #d93025;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  
+}
+
+.errormsg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.successIcon {
+  width: 18px;
+}
+
+.successText {
+  padding-left: 4px;
+  color: #0cab18;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  
+}
+
+.successmsg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.RegistrationFooter {
+  display: flex;
+  position: relative;
+  margin-top: 200px;
+}
+
+.errorIcon2 {
+  display: block;
+}
+
+
+
+
+/* Featured Artist Styling */
+.featured-flex{
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+}
+.featured-artists {
+  width: 500px;
+  text-align: center;
+  margin-top: 50px;
+}
+.featured-artists h1{
+  font-weight: 300;
+}
+.medals {
+  width: 100px;  
+  z-index: 1;
+  position: absolute;
+  transform: translate(-140px);
+}
+.references {
+  visibility: hidden;
+}

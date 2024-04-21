@@ -1,0 +1,285 @@
+body {
+    margin: 0;
+    padding: 0;
+  }
+  @font-face {
+    font-family: Typewriterhand;
+    src: url(../public/fonts/Typewriterhand.ttf);
+  }
+  
+  @font-face {
+    font-family: CabinSketch-Bold;
+    src: url(../public/fonts/CabinSketch-Bold.ttf);
+  }
+  
+  @font-face {
+    font-family: CabinSketch-Regular;
+    src: url(../public/fonts/CabinSketch-Regular.ttf);
+  }
+  
+  @import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+/* 
+  font-family: 'Cabin Sketch', cursive;
+  font-family: 'Open Sans', sans-serif; 
+*/
+
+  #font1 {
+    font-family: 'Cabin Sketch', cursive;
+    font-size: 40px;
+    margin-bottom: 0;
+    font-weight: bold;
+  }
+  
+  #font2 {
+    font-family: 'Cabin Sketch', cursive;
+    font-size: 40px;
+    margin-top: 0;
+  }
+  
+  #font3 {
+    font-family: Typewriterhand;
+    font-size: 40px;
+  }
+  
+  #font4 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+    font-size: 40px;
+  }
+  
+  .tablink {
+    background-color: #EDEDED;
+    color: black;
+    float: left;
+    border: solid;
+    border-bottom: solid gray 1px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 20px;
+    width: 25%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+  }
+  
+  .tablink:hover {
+    background-color: #cdcdcd;
+  }
+  
+  /* Style the tab content (and add height:100% for full page content) */
+  .tabcontent {
+    color: black;
+    display: none;
+    padding: 100px 20px;
+    height: 100%;
+    width: 50%;
+    text-align: center;
+    margin: auto;
+  }
+  
+  .tabcontent p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    text-align: left;
+  }
+  
+  .tabcontent h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    text-align: center;
+  }
+  
+  #Branding {background-image: white;}
+  #Colors {background-color: white;}
+  #Fonts {background-color: white;}
+  #PageLayout {background-color: white;}
+  
+  #logo-container {
+    display: flex; 
+    text-align: center; 
+    justify-content: space-evenly;
+  }
+  .iconBox {
+    width: 300px;
+    padding: 40px;
+  }
+  .logoBox {
+    padding-top: 40px;
+  }
+  .logoFull {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  .logoBlocks {
+    width: 200px;
+  }
+  .logoFlav {
+    width: 200px;
+  }
+  
+  .color-flex {
+    display: flex;
+    text-align: center;  
+    width: 100%;
+    justify-content: space-around;
+    margin: 40px 0px 40px 0px;
+  }
+  
+  .colorBox {
+    text-align: center;
+  }
+  .colorBox p {
+    text-align: left;
+    width: 250px;
+  }
+  .colorSwatch {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: solid black 2px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  #fontBox p, h2 {
+    text-align: left;
+  }
+  
+  .dev_profiles {
+    text-align: center;
+    margin: auto;
+  }
+  
+  .dev_profiles h1 {
+    padding-top: 20px;
+    font-size: 60px;
+    text-align: center;
+    color: black;
+    font-family: CabinSketch-Bold;
+  }
+  
+  .dev_profiles img {
+    width: 350px;
+    padding: 20px;
+    border: solid 8px;
+    border-color: #cdcdcd;
+    margin-bottom: 30px;
+  }
+  
+  .dev_profiles p {
+    width: 800px;
+    text-align: justify;
+    margin: auto;
+    color: black;
+    font-family: Typewriterhand;
+    font-weight: 300;
+    font-size: 20px;
+    padding-bottom: 50px;
+  }
+  
+  .navbar {
+    width: 100%;
+    overflow: auto;
+    background-color: #1a9bae88;
+  }
+  .navbar a {
+    float: left;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    width: 20%;
+    padding: 12px 0px 12px 0px;
+    font-size: 30px;
+    font-family: CabinSketch-Regular;
+  }
+  .navbar a:hover:not(.active) {
+    background-color: #1a9bae55;
+    font-family: CabinSketch-Bold;
+  }
+  a.active {
+    background-color: #1a9baeAA;
+    font-family: CabinSketch-Bold;
+  }
+  
+  .weeklyInspo {
+      display: inline-block;
+      width: 100%;
+      text-align: center;
+      background-color: #EDEDED;
+      height: 200px;
+  }
+  
+  .flex-container {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-around;
+      align-items: flex-start;
+      margin: 30px 30px 0 30px;
+  }
+  
+  .col {
+      background-color: #cdcdcd;
+      border-radius: 25px;
+      font-size: 40px;
+      color: gray;
+      font-family: Typewriterhand;
+      overflow-wrap: normal;
+      text-align: center;
+      width: 30%;
+      margin-bottom: 40px;
+      padding: 20px 0 20px 0;
+      height: 200px;
+  }
+  
+  #plusButton {
+      display: block;
+      position: fixed;
+      bottom: 50px;
+      right: 50px;
+      z-index: 99;
+      width: 70px;
+      height: 70px;
+      border: none;
+      box-shadow: 3px 2px 5px gray;
+      background-image: linear-gradient(132.37deg, rgba(26, 155, 174, 0.75) 0%, #E0C597 51.36%, #DB938E 98.6%);
+      color: white;
+      cursor: pointer;
+      border-radius: 50px;
+      font-size: 50px;
+  }
+
+  /* footer */
+
+.footer-grid {
+  display: flex;
+  padding: 1%;
+  justify-content: space-evenly;
+  background-color: #cdcdcd;
+}
+.footer-left {
+  width: 50%;
+  text-align: center;
+}
+.footer-left img {
+  width: 65%;
+}
+.footer-right {
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.footer-right a,span {
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: black;
+  line-height: 24px;
+}
+.footer-right a:hover {
+  text-decoration: underline;
+}
